@@ -13,9 +13,9 @@ Réaliser un système de commande en ligne multi-marché avec Java en utilisant 
 ### Création d'une nouvelle feature :
 
 ```bash
-git checkout dev
+git checkout main
 
-git pull origin dev
+git pull origin main
 OU
 git fetch origin (mieux)
 
