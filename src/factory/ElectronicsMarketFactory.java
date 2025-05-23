@@ -1,4 +1,4 @@
-package marche;
+package factory;
 
 public class ElectronicsMarketFactory {
 
