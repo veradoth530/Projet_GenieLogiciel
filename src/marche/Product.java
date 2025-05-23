@@ -1,4 +1,4 @@
-package product;
+package marche;
 
 public class Product {
 
