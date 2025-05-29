@@ -4,20 +4,20 @@ import marche.Product;
 import marche.Invoice;
 import marche.Notifie;
 
-public class ElectronicsMarketFactory implements MarketFactory{
-	
+public class ElectronicsMarketFactory implements MarketFactory {
 	@Override
 	public Product createProduct(String type) {
-		return new Product(type);
+		return new ElectronicsProduct(type);
 	}
-	
+
 	@Override
 	public Invoice createInvoice() {
-		return new Invoice();
+		return new ElectronicsInvoice();
 	}
-	
+
 	@Override
-	public Notifie createNotifie() {
-		return new Notifie();
+	public Notifier createNotifier() {
+		return new ElectronicsNotifier();
 	}
 }
+
