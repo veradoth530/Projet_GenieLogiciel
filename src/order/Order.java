@@ -1,3 +1,15 @@
+package order;
+/**
+ * Classe représentant une commande client.
+ */
+
+import java.util.ArrayList;
+import java.util.List;
+
+import market.Invoice;
+import market.Notifier;
+import product.Product;
+
 public class Order {
 	private String clientName;
 	private List<Product> products = new ArrayList<>();
@@ -11,6 +23,10 @@ public class Order {
 	public void setInvoice(Invoice i) { this.invoice = i; }
 	public void setNotifier(Notifier n) { this.notifier = n; }
 
+
+	/**
+	 * Affiche le résumé de la commande.
+	 */
 	public void print() {
 		System.out.println("Commande pour : " + clientName);
 		for (Product p : products) {

@@ -1,13 +1,12 @@
 package builder;
 
-import market.Product;
+import order.Order;
 
 public interface OrderBuilder {
-	
-	public void startOrder();
-	public void setClient(String nom);
-	public void addProduct(String type, int quantite);
-	public void applyDiscount(double reduction);
-	public void finalizeOrder();
-	public void getOrder();
+	void startOrder();
+	void setClient(String name);
+	void addProduct(String name, int quantity);
+	void applyDiscount(double d);
+	void finalizeOrder();
+	Order getOrder();
 }

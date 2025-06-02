@@ -1,23 +1,21 @@
 package factory;
 
-import marche.Product;
-import marche.Invoice;
-import marche.Notifie;
+import market.*;
+import product.Product;
 
 public class FoodMarketFactory implements MarketFactory {
-	
 	@Override
 	public Product createProduct(String type) {
-		return new Product(type);
+		return new FoodProduct(type);
 	}
-	
+
 	@Override
 	public Invoice createInvoice() {
-		return new Invoice();
+		return new FoodInvoice();
 	}
-	
+
 	@Override
-	public Notifie createNotifie() {
-		return new Notifie();
+	public Notifier createNotifier() {
+		return new FoodNotifier();
 	}
 }
