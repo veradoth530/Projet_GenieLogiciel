@@ -2,6 +2,10 @@ package console;
 
 import java.util.Scanner;
 
+import factory.*;
+import builder.*;
+import order.Order;
+
 public class ConsoleClient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

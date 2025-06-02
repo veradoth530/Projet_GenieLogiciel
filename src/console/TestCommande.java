@@ -1,3 +1,9 @@
+package console;
+
+import factory.*;
+import builder.*;
+import order.Order;
+
 public class TestCommande {
     public static void main(String[] args) {
         MarketFactory factory = new ElectronicsMarketFactory();

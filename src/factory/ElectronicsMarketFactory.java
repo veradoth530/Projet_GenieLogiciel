@@ -1,6 +1,6 @@
 package factory;
 
-import market.ElectronicsInvoice;
+import market.ElectronicsInVoice;
 import market.ElectronicsNotifier;
 import market.ElectronicsProduct;
 import market.Invoice;
@@ -15,7 +15,7 @@ public class ElectronicsMarketFactory implements MarketFactory {
 
 	@Override
 	public Invoice createInvoice() {
-		return new ElectronicsInvoice();
+		return new ElectronicsInVoice();
 	}
 
 	@Override
