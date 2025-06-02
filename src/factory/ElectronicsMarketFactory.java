@@ -1,8 +1,11 @@
 package factory;
 
-import marche.Product;
-import marche.Invoice;
-import marche.Notifie;
+import market.ElectronicsInvoice;
+import market.ElectronicsNotifier;
+import market.ElectronicsProduct;
+import market.Invoice;
+import market.Notifier;
+import product.Product;
 
 public class ElectronicsMarketFactory implements MarketFactory {
 	@Override
